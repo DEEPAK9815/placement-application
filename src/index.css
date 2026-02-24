@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ffffff;
+  /* Reverting to white for standard SaaS look unless user kept off-white. Let's keep it clean. */
+  --color-primary: hsl(245, 58%, 51%);
+  /* Indigo/Purple from request */
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f3f4f6;
+  --color-secondary-foreground: #1f2937;
+  --color-accent: hsl(245, 58%, 51%);
+  /* Mapping accent to primary for now */
+
+  --font-serif: "Playfair Display", serif;
+  /* Keeping these as they are nice */
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+  }
+}

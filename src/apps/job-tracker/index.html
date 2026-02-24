@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Notification Tracker</title>
+  <link rel="stylesheet" href="design-system/index.css">
+  <link rel="stylesheet" href="design-system/app.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-nav">
+      <a href="/" class="app-nav-brand">Job Notification Tracker</a>
+      <nav class="app-nav-links" aria-label="Main">
+        <a class="app-nav-link" href="/dashboard">Dashboard</a>
+        <a class="app-nav-link" href="/saved">Saved</a>
+        <a class="app-nav-link" href="/digest">Digest</a>
+        <a class="app-nav-link" href="/settings">Settings</a>
+        <a class="app-nav-link" href="/proof">Proof</a>
+      </nav>
+      <button type="button" class="app-nav-toggle" id="app-nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="app-nav-toggle-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </header>
+    <main id="app-content" class="app-main">
+      <div class="landing">
+        <h1 class="landing-headline">Stop Missing The Right Jobs.</h1>
+        <p class="landing-subtext">Precision-matched job discovery delivered daily at 9AM.</p>
+        <a href="/settings" class="btn btn-primary landing-cta">Start Tracking</a>
+      </div>
+    </main>
+  </div>
+  <script src="js/jobs-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
